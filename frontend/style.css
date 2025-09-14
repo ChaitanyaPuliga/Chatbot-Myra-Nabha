@@ -1,0 +1,174 @@
+body { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,;
+
+}
+.robo-icon{
+  width:20px;
+ 
+  margin-right:10px;
+}
+.mic-icon{
+  width:20px;
+}
+.send-icon{
+  width:20px;
+  background-color:#35D398
+}
+.chat-container {
+  background: #fff;
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.chat-header {
+   margin-top:10px;
+  display:flex;
+  color:black;
+  font-weight:600;
+  padding: 14px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  ;
+}
+
+ 
+
+.user {
+  background:#35D398;
+  align-self: flex-end;
+  color:white;
+  font-size:14px;
+}
+
+.bot {
+  background: #F1F4F9;
+  align-self: flex-start;
+  color: black;
+  font-size:14px;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+.input-group{
+  display:flex;
+  flex:1;
+    border:1px solid black;
+    margin:3px;
+    margin-right:5px;
+    border-radius:4px;
+
+}
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#send-btn {
+  background:  #35D398;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  
+  border-radius:6px;
+  width:30px;
+  cursor: pointer;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  padding: 5px;
+}
+  
+.message .bar-container {
+  background: #e0e0e0;
+  border-radius: 5px;
+  height: 12px;
+  margin-top: 5px;
+}
+
+.message .bar-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+#mic-btn {
+  border-left:none;
+  border-right:1px solid black;
+  color: white;
+  background:white;
+  border: none;
+  padding: 5px;
+  margin-left: -1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#mic-btn.recording {
+  background: #3835dc; /* blue when recording */
+}
+#typing em {
+  font-style: normal;
+  color: #888;
+}
+#typing .dots::after {
+  content: "...";
+  animation: dots 1s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: ""; }
+  33% { content: "."; }
+  66% { content: ".."; }
+  100% { content: "..."; }
+}
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+   
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages */
+.message {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+/* User messages on the right */
+.message.user {
+  background: #40e083;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* Bot messages on the left */
+.message.bot {
+  background:#F1F4F9;
+  align-self: flex-start;
+  text-align: left;
+}

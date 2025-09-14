@@ -1,0 +1,30 @@
+{
+    "hello": {
+        "count": 1,
+        "reward": 0
+    },
+    "Hello Aditya!": {
+        "count": 2,
+        "reward": 1
+    },
+    "health": {
+        "count": 1,
+        "reward": 0
+    },
+    "Hmm, could you rephrase that?": {
+        "count": 3,
+        "reward": -2
+    },
+    "i": {
+        "count": 1,
+        "reward": 0
+    },
+    "feeling": {
+        "count": 1,
+        "reward": 0
+    },
+    "morning": {
+        "count": 1,
+        "reward": 0
+    }
+}
